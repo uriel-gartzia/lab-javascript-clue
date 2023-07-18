@@ -207,8 +207,18 @@ function selectRandom(arr) {
 selectRandom(suspectsArray)
 
 
-function pickMystery() {
-   
+function pickMystery(arr) {
+ let thisGameRandomCard = {
+    suspect: {},
+    weapon: {},
+    room: {},
+ };
+
+ thisGameRandomCard.suspect = selectRandom (suspectsArray);
+ thisGameRandomCard.weapon = selectRandom (weaponsArray);
+ thisGameRandomCard.room = selectRandom (roomsArray);
+
+ return thisGameRandomCard;
 }
 
 
