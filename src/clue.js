@@ -224,5 +224,11 @@ function pickMystery(arr) {
 
 // ITERATION 3
 
-function revealMystery() {}
+function revealMystery(envelope) {
+    // console.log(`${envelope.suspect.firstName} ${envelope.suspect.lastName} killed Mr. Boddy using the ${envelope.weapon} in the ${envelope.room}!`);
+    return (`${envelope.suspect.firstName} ${envelope.suspect.lastName} killed Mr. Boddy using the ${envelope.weapon.name} in the ${envelope.room.name}!`);
+    
+}
+
+
 
